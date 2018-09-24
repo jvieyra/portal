@@ -1,0 +1,25 @@
+body {
+  background-image: url("/images/index/bg-index.jpg");
+  background-position: cover;
+}
+
+a.a-menu-index {
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+a:hover.a-menu-index {
+  list-style: none;
+  text-decoration: none;
+}
+
+.logo-itj {
+  width: 50px;
+  height: 30px;
+}
+
+.img-text-title {
+  color: #f5f6fa;
+}
+
