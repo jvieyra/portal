@@ -23,3 +23,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('students/login', 'StudentsController@showLoginForm');
 Route::post('students/login',['as'=>'students.login','uses' => 'StudentsController@login']);
 Route::get('students/','StudentsController@index');
+
+//parents login
+Route::get('parents/login','GuardiansController@showLoginForm');
+Route::post('parents/login',['as' => 'guardians.login','uses' => 'GuardiansController@login']);
+Route::get('parents/','GuardiansController@index');
