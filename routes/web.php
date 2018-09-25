@@ -28,3 +28,9 @@ Route::get('students/','StudentsController@index');
 Route::get('parents/login','GuardiansController@showLoginForm');
 Route::post('parents/login',['as' => 'guardians.login','uses' => 'GuardiansController@login']);
 Route::get('parents/','GuardiansController@index');
+
+
+//parents login
+Route::get('employees/login','EmployeesController@showLoginForm');
+Route::post('employees/login',['as' => 'employees.login','uses' => 'EmployeesController@login']);
+Route::get('employees/','EmployeesController@index');

@@ -55,6 +55,11 @@ return [
             'driver'=> 'session',
             'provider'=>'guardians'
         ],
+
+        'employees' => [
+            'driver'=> 'session',
+            'provider'=>'employees'
+        ],
     ],
 
     /*
@@ -88,6 +93,11 @@ return [
         'guardians' => [
             'driver' => 'eloquent',
             'model' => App\Guardian::class,
+        ],
+
+        'employees' => [
+            'driver' => 'eloquent',
+            'model' => App\Employee::class,
         ]
 
         // 'users' => [

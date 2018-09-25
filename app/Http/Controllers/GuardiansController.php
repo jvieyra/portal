@@ -16,6 +16,11 @@ class GuardiansController extends Controller {
 
 	protected $redirectTo = '/parents';
 
+
+	public function authenticated(){
+        return redirect('/parents');
+  }
+
 	protected function guard(){
 		return Auth::guard('guardians');
 	}

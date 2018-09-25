@@ -35,7 +35,7 @@
 			    <div class="col col-md-4 text-center">
 						<img src="{{ asset('images/index/personal.jpg') }}" alt="Personal" width="150" height="150" class="rounded-circle">
 						<a class="a-menu-index" href="">
-							<div class="img-text-title">Personal</div>
+							<div class="img-text-title">Equipo ITJ Vallereal</div>
 						</a>
 			    </div>
 			    <div class="col col-md-4 text-center">

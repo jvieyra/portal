@@ -4,7 +4,6 @@ namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Guardian extends Authenticatable {
+class Employee extends Authenticatable {
 
-	protected $table = 'guardians';
 }
