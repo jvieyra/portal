@@ -8,7 +8,9 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class EmployeesController extends Controller {
 
-    
+    public function __construct(){
+        $this->middleware('auth:employees',['only'=>['index']]);
+    }
 
     /*Employees Login*/
     use AuthenticatesUsers;

@@ -22,8 +22,13 @@ class StudentsController extends Controller{
 	}
 
 	public function showLoginForm(){
-		return view('students.login');
+		return view('students.auth.login');
 	}
+
+	public function authenticated(){
+    return redirect('/students');
+  }
+
 	/**
 	 * Display a listing of the resource.
 	 *

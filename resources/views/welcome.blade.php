@@ -1,57 +1,48 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-		<link rel="stylesheet" href="{{ asset('css/app.css') }}">
-		<title>Portal ITJ Vallereal</title>
-		<!-- Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-		<div class="flex-center position-ref full-height">
-			@if (Route::has('login'))
-				<div class="top-right links">
-					@auth
-						<a href="{{ url('/home') }}">Home</a>
-					@else
-						<a href="{{ route('login') }}">Login</a>
-						<a href="{{ route('register') }}">Register</a>
-					@endauth
-				</div>
-			@endif
-			<div class="container">
+@extends('layouts.auth.app')
+
+@section('content')
+<!-- login guardians -->
+<div class="page-wrapper pa-0 ma-0 select-login auth-page ">
+<div class="container-fluid">
+	<!-- Row -->
+	<div class="table-struct full-width full-height">
+		<div class="table-cell vertical-align-middle auth-form-wrap">
+			<div class="ml-auto mr-auto no-float">
 				<div class="row">
-					<div class="col text-center">
-						<img class="img-fluid " src="{{ asset('images/index/logoitja.png') }}" alt="">
-					</div>
-				</div>
-				<div class="row">
-					<hr>
-				</div>
-				<div class="row">
-			    <div class="col col-md-4 text-center">
-						<img src="{{ asset('images/index/personal.jpg') }}" alt="Personal" width="150" height="150" class="rounded-circle">
-						<a class="a-menu-index" href="">
-							<div class="img-text-title">Equipo ITJ Vallereal</div>
+					<div class="row">
+							<div class="mb-30 text-center">
+							<img class="img-fluid img-logo-select" src="{{ asset('/images/auth/logoitj_select.svg') }}" alt="">
+							<h6 class="text-center nonecase-font txt-grey">Selecciona un Portal</h6>
+						</div>
+						</div>
+					<div class="col-sm-12 col-xs-12">
+						<div class="row">
+					    <div class="col-md-4 text-center">
+								<img src="{{ asset('/images/index/personal.jpg') }}" alt="Personal" width="150" height="150" class="img-circle">
+								<a class="a-menu-index" href="{{ route('employees.form')}}">
+									<div class="img-text-title text-muted text-center">Equipo ITJ Vallereal</div>
+								</a>
+					    </div>
+			    <div class="col-md-4 text-center">
+						<img src="{{ asset('/images/index/students.jpg') }}" alt="students" width="150" height="150" class="img-circle">
+						<a class="a-menu-index" href="{{ route('students.form') }}">
+							<div class="img-text-title text-muted">Estudiantes</div>
 						</a>
 			    </div>
-			    <div class="col col-md-4 text-center">
-						<img src="{{ asset('images/index/students.jpg') }}" alt="students" width="150" height="150" class="rounded-circle">
-						<a class="a-menu-index" href="">
-							<div class="img-text-title">Estudiantes</div>
-						</a>
-			    </div>
-			    <div class="col col-md-4 text-center">
-						<img src="{{ asset('images/index/parents.jpg') }}" alt="students" width="150" height="150" class="rounded-circle">
-						<a class="a-menu-index" href="">
-							<div class="img-text-title">Papás</div>
+			    <div class="col-md-4 text-center">
+						<img src="{{ asset('/images/index/parents.jpg') }}" alt="students" width="150" height="150" class="img-circle">
+						<a class="a-menu-index" href="{{ route('guardians.form') }}">
+							<div class="img-text-title text-muted">Papás</div>
 						</a>
 			    </div>
   			</div><!-- ./row -->
-			</div><!-- ./ container-->
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</body>
-</html>
+		<!-- /Row -->
+	</div>
+</div>
+
+@endsection

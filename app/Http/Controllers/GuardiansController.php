@@ -18,7 +18,7 @@ class GuardiansController extends Controller {
 
 
 	public function authenticated(){
-        return redirect('/parents');
+  	return redirect('/parents');
   }
 
 	protected function guard(){

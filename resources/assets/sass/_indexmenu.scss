@@ -1,9 +1,4 @@
 
-body {
-  background-image: url('/images/index/bg-index.jpg');
-  background-position:cover;
-}
-
 a.a-menu-index {
 	text-decoration:none;
 	cursor: pointer;
@@ -15,10 +10,23 @@ a:hover.a-menu-index {
 	text-decoration:none;
 }
 
-.logo-itj {
-	width:50px;
-	height:30px;
+div.img-text-title {
+	font-size:1.4em;
+	color:#fff;
 }
-.img-text-title {
-	color:#f5f6fa;
+
+.options-menu {
+	margin-right:0em;
 }
+
+.page-wrapper.auth-page.select-login {
+	background-image: url('/images/index/back-intro1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; //propotional resize
+}
+
+.img-logo-select {
+	width:50%;
+	height:25%;
+}
+
