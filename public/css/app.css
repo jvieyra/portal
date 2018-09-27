@@ -19,7 +19,6 @@ div.img-text-title {
 }
 
 .page-wrapper.auth-page.select-login {
-  background-image: url("/images/index/back-intro1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -27,5 +26,20 @@ div.img-text-title {
 .img-logo-select {
   width: 50%;
   height: 25%;
+}
+
+.login-parents {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.login-students {
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+.text-white {
+  color: #fff;
+  text-shadow: 0 2px 1px #7a7878;
 }
 

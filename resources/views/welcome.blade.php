@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- login guardians -->
-<div class="page-wrapper pa-0 ma-0 select-login auth-page ">
+<div class="page-wrapper pa-0 ma-0 select-login auth-page " style="background-image: url({{ asset('/images/index/back-intro1.jpg') }})">
 <div class="container-fluid">
 	<!-- Row -->
 	<div class="table-struct full-width full-height">
@@ -12,7 +12,7 @@
 					<div class="row">
 							<div class="mb-30 text-center">
 							<img class="img-fluid img-logo-select" src="{{ asset('/images/auth/logoitj_select.svg') }}" alt="">
-							<h6 class="text-center nonecase-font txt-grey">Selecciona un Portal</h6>
+							<h6 class="text-center nonecase-font text-white">Selecciona un Portal</h6>
 						</div>
 						</div>
 					<div class="col-sm-12 col-xs-12">
