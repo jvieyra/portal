@@ -1,8 +1,7 @@
 @extends('layouts.auth.app')
-
 @section('content')
 <!-- login employees -->
-<div class="page-wrapper pa-0 ma-0 auth-page">
+<div class="page-wrapper login-employees pa-0 ma-0 auth-page" style="background-image: url({{ asset('/images/auth/employees/bg-login-employees.jpg') }})">
 <div class="container-fluid">
 	<!-- Row -->
 	<div class="table-struct full-width full-height">
@@ -12,13 +11,13 @@
 					<div class="col-sm-12 col-xs-12">
 						<div class="mb-30">
 							<img class="img-fluid " width="340" height="90" src="{{ asset('/images/auth/logoitj_login.svg') }}" alt="">
-							<h6 class="text-center nonecase-font txt-grey">Acceso a Personal </h6>
+							<h6 class="text-center nonecase-font text-white">Acceso a Personal </h6>
 						</div>
 						<div class="form-wrap">
 							<form method="POST" action="{{ route('employees.login')}}">
 								@csrf
 								<div class="form-group">
-									<label class="control-label mb-10" for="exampleInputEmail_2">Email</label>
+									<label class="control-label mb-10 text-white" for="exampleInputEmail_2">Email</label>
 									<input type="email" class="form-control" required="" id="exampleInputEmail_2" 
 																 placeholder="Ingresa tu email" autofocus name="email" value="{{ old('email') }}">
 									@if ($errors->has('email'))
@@ -28,7 +27,7 @@
 									@endif
 								</div>
 								<div class="form-group">
-									<label class="pull-left control-label mb-10" for="exampleInputpwd_2">Password</label>
+									<label class="pull-left control-label mb-10 text-white" for="exampleInputpwd_2">Password</label>
 									<a class="capitalize-font txt-primary block mb-10 pull-right font-12" href="forgot-password.html">¿Olvidaste tu password?</a>
 									<div class="clearfix"></div>
 									<input type="password" class="form-control" required="" id="exampleInputpwd_2" 
@@ -42,7 +41,7 @@
 								<div class="form-group">
 									<div class="checkbox checkbox-primary pr-10 pull-left">
 										<input id="checkbox_2" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-										<label for="checkbox_2"> Recuerdame</label>
+										<label class="text-white" for="checkbox_2"> Recuerdame</label>
 									</div>
 									<div class="clearfix"></div>
 								</div>

@@ -2720,8 +2720,8 @@ a#toggle_mobile_nav {
       transition: 0.4s ease;
       overflow: hidden; }
       .navbar.navbar-inverse.navbar-fixed-top .nav-header .logo-wrap {
-        width: 225px;
-        padding-top: 19px; }
+        width: 201px;
+        padding-top: 6px; }
         .navbar.navbar-inverse.navbar-fixed-top .nav-header .logo-wrap .brand-img {
           margin-right: 10px;
           position: relative;

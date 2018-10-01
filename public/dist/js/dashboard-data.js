@@ -300,8 +300,8 @@ $(document).ready(function(){
 $(window).load(function(){
 	window.setTimeout(function(){
 		$.toast({
-			heading: 'Welcome to Philbert',
-			text: 'Use the predefined ones, or specify a custom position object.',
+			heading: 'Bienvenido al Portal ITJ',
+			text: 'Administracion de Escuela',
 			position: 'top-right',
 			loaderBg:'#f0c541',
 			icon: 'success',

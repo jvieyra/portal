@@ -12,6 +12,7 @@ a:hover.a-menu-index {
 div.img-text-title {
   font-size: 1.4em;
   color: #fff;
+  text-shadow: 0 2px 1px #7a7878;
 }
 
 .options-menu {
@@ -28,6 +29,8 @@ div.img-text-title {
   height: 25%;
 }
 
+/* forms-login */
+
 .login-parents {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -38,8 +41,43 @@ div.img-text-title {
   background-size: 100%;
 }
 
+.login-employees {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.login-admin {
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
 .text-white {
   color: #fff;
   text-shadow: 0 2px 1px #7a7878;
+}
+
+/* top menu portal*/
+
+.logo-portal {
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .logo-portal {
+    width: 24%;
+  }
+}
+
+@media (max-width: 425px) {
+  .logo-portal {
+    width: 40%;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo-portal {
+    width: 45%;
+  }
 }
 

@@ -22,7 +22,8 @@ class StudentsController extends Controller{
 	}
 
 	public function showLoginForm(){
-		return view('students.auth.login');
+		$title_page = 'Login Estudiantes';
+		return view('students.auth.login',compact('title_page'));
 	}
 
 	public function authenticated(){

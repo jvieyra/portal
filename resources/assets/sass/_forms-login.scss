@@ -1,4 +1,5 @@
 
+/* forms-login */
 .login-parents {
 	background-repeat: no-repeat;
   background-size: 100%; //propotional resize
@@ -8,6 +9,18 @@
 	background-repeat: repeat;
   background-size: 100%; //propotional resize
 }
+
+.login-employees {
+	background-repeat: no-repeat;
+	background-size:100%;
+}
+
+
+.login-admin {
+	background-repeat: no-repeat;
+	background-size:50%;
+}
+
 
 .text-white {
 	color:#fff;

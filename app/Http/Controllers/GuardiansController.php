@@ -26,7 +26,8 @@ class GuardiansController extends Controller {
 	}
 
 	public function showLoginForm(){
-		return view('guardians.auth.login');
+		$title_page = 'Login Papás';
+		return view('guardians.auth.login',compact('title_page'));
 	}
 	/**
 	 * Display a listing of the resource.

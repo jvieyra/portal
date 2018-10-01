@@ -1,0 +1,23 @@
+/* top menu portal*/
+.logo-portal {
+	position: relative;
+	width:100%;
+}
+
+@media (max-width: 1024px) {
+	.logo-portal {
+		width:24%;
+	}
+}
+
+@media (max-width: 425px) {
+	.logo-portal {
+		width:40%;
+	}
+}
+
+@media (max-width: 320px) {
+	.logo-portal {
+		width:45%;
+	}
+}
